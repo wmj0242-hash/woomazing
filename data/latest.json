@@ -1,5 +1,37 @@
 {
-  "generated_at": "2026-09-09T10:03:51.653485+09:00",
-  "count": 0,
-  "listings": []
+  "generated_at": "2026-09-09T10:21:24.181086+09:00",
+  "count": 2,
+  "regular": [],
+  "remndr": [
+    {
+      "house_manage_no": "2026910235",
+      "house_nm": "청계 노르웨이숲(12차)",
+      "bsns_mby_nm": "황학동청계지역주택조합",
+      "hssply_adres": "서울특별시 중구 황학동 1756번지 일원",
+      "tot_suply_hshldco": 13,
+      "rcept_bgnde": "2026-09-14",
+      "rcept_endde": "2026-09-14",
+      "przwner_presnatn_de": "2026-09-17",
+      "cntrct_cncls_bgnde": "2026-09-22",
+      "cntrct_cncls_endde": "2026-09-24",
+      "mdhs_telno": "15550807",
+      "pblanc_url": "https://www.applyhome.co.kr/ai/aia/selectAPTRemndrLttotPblancDetailView.do?houseManageNo=2026910235&pblancNo=2026910235",
+      "rcrit_pblanc_de": "2026-09-08"
+    },
+    {
+      "house_manage_no": "2026910233",
+      "house_nm": "드파인 아르티아(2차)",
+      "bsns_mby_nm": "노량진2재정비촉진구역재개발정비사업조합",
+      "hssply_adres": "서울특별시 동작구 노량진동 312-75번지 일대",
+      "tot_suply_hshldco": 7,
+      "rcept_bgnde": "2026-09-14",
+      "rcept_endde": "2026-09-14",
+      "przwner_presnatn_de": "2026-09-17",
+      "cntrct_cncls_bgnde": "2026-09-19",
+      "cntrct_cncls_endde": "2026-09-19",
+      "mdhs_telno": "16444041",
+      "pblanc_url": "https://www.applyhome.co.kr/ai/aia/selectAPTRemndrLttotPblancDetailView.do?houseManageNo=2026910233&pblancNo=2026910233",
+      "rcrit_pblanc_de": "2026-09-08"
+    }
+  ]
 }
