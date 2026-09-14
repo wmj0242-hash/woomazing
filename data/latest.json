@@ -1,6 +1,12 @@
 {
-  "generated_at": "2026-09-14T08:21:22.846803+09:00",
+  "generated_at": "2026-09-14T12:54:24.418005+09:00",
   "count": 0,
-  "regular": [],
-  "remndr": []
+  "new": {
+    "regular": [],
+    "remndr": []
+  },
+  "rcept_today": {
+    "regular": [],
+    "remndr": []
+  }
 }
