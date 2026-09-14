@@ -109,4 +109,46 @@ def build(regular, remndr, run_date):
         cards = "<div style='color:#888;padding:20px 0;'>오늘은 조건에 맞는 신규 공고가 없습니다.</div>"
         summary = "오늘은 서울 · 민영 · 전용 84㎡ 이하 신규 공고가 없습니다."
 
-    checklist_html = "".join(f"<li
+    checklist_html = "".join(f"<li style='margin-bottom:4px;'>{c}</li>" for c in CHECKLIST)
+
+    return f"""
+    <div style="font-family:'Apple SD Gothic Neo',Malgun Gothic,Arial,sans-serif;color:#222;max-width:640px;margin:0 auto;">
+      <div style="margin-bottom:18px;">
+        <div style="font-size:12px;color:#999;margin-bottom:4px;">{run_date} 기준 · 서울 · 민영 · 전용 84㎡ 이하</div>
+        <div style="font-size:16px;font-weight:700;">{summary}</div>
+      </div>
+
+      {cards}
+
+      <div style="margin-top:24px;padding:16px 20px;background:#f8f9fa;border-radius:10px;">
+        <div style="font-weight:700;font-size:14px;margin-bottom:8px;">📋 청약 신청 전 체크리스트</div>
+        <ul style="margin:0;padding-left:18px;font-size:13px;color:#444;line-height:1.6;">
+          {checklist_html}
+        </ul>
+      </div>
+
+      <div style="margin-top:20px;font-size:11px;color:#aaa;">
+        본 메일은 청약홈 공개 API 데이터를 기반으로 자동 생성되었습니다. 정확한 자격 요건 및 세부 조건은 반드시 각 공고문 원문을 확인하세요.
+      </div>
+    </div>
+    """
+
+if __name__ == "__main__":
+    if len(sys.argv) < 3:
+        print("사용법: python3 build_email.py <입력 latest.json 경로> <출력 html 경로>", file=sys.stderr)
+        sys.exit(1)
+
+    in_path, out_path = sys.argv[1], sys.argv[2]
+
+    with open(in_path, "r", encoding="utf-8") as f:
+        data = json.load(f)
+
+    regular = data.get("regular", [])
+    remndr = data.get("remndr", [])
+    generated_at = data.get("generated_at", "")
+    run_date = generated_at.split("T")[0] if generated_at else ""
+
+    html = build(regular, remndr, run_date)
+
+    with open(out_path, "w", encoding="utf-8") as f:
+        f.write(html)
