@@ -1,12 +1,57 @@
 {
-  "generated_at": "2026-11-22T10:29:11.225383+09:00",
-  "count": 0,
+  "generated_at": "2026-11-23T10:54:25.948723+09:00",
+  "count": 1,
   "new": {
     "regular": [],
     "remndr": []
   },
   "rcept_today": {
-    "regular": [],
+    "regular": [
+      {
+        "house_manage_no": "2026000560",
+        "house_nm": "해링턴 플레이스 문래",
+        "cnstrct_entrps_nm": "효성중공업 주식회사",
+        "hssply_adres": "서울특별시 영등포구 문래동3가 27-1번지 일원",
+        "tot_suply_hshldco": 218,
+        "rcept_bgnde": "2026-11-23",
+        "rcept_endde": "2026-11-26",
+        "przwner_presnatn_de": "2026-12-02",
+        "cntrct_cncls_bgnde": "2026-12-14",
+        "cntrct_cncls_endde": "2026-12-16",
+        "mdhs_telno": "0234637774",
+        "pblanc_url": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000560&pblancNo=2026000560",
+        "rcrit_pblanc_de": "2026-11-13",
+        "units": [
+          {
+            "house_ty": "084.9409A",
+            "suply_ar": "109.7007",
+            "lttot_top_amount": "182700",
+            "suply_hshldco": 51,
+            "spsply_hshldco": 59,
+            "nwwds_hshldco": 16,
+            "lfe_frst_hshldco": 7
+          },
+          {
+            "house_ty": "084.9708B",
+            "suply_ar": "110.4326",
+            "lttot_top_amount": "178500",
+            "suply_hshldco": 25,
+            "spsply_hshldco": 29,
+            "nwwds_hshldco": 8,
+            "lfe_frst_hshldco": 4
+          },
+          {
+            "house_ty": "084.9894C",
+            "suply_ar": "108.7429",
+            "lttot_top_amount": "177500",
+            "suply_hshldco": 25,
+            "spsply_hshldco": 29,
+            "nwwds_hshldco": 8,
+            "lfe_frst_hshldco": 4
+          }
+        ]
+      }
+    ],
     "remndr": []
   }
 }
